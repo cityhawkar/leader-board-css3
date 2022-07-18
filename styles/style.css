@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&family=Roboto+Slab&family=Ubuntu&display=swap');
+/* basic style */
+body{
+    background-color: #E5E5E5;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: capitalize;
+} 
+/* css styles start */
+main{
+    display: flex;
+    justify-content: center;
+}
+.container-player{
+    background: #FFFFFF;
+    width: 870px;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 29px;
+    margin-left: 48px;
+    margin-bottom: 30px;
+    
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player{
+    display: flex;
+}
+.p-name{
+    margin-left: 16px;
+    font-size: 18px;
+}
+h1{
+    margin-left: 50px;
+    color: #562EFF;
+    font-size: 24px;
+    margin-bottom: 26px;
+}
