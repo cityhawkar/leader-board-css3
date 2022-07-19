@@ -1,3 +1,4 @@
+/* google font */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&family=Roboto+Slab&family=Ubuntu&display=swap');
 /* basic style */
 body{
@@ -7,18 +8,17 @@ body{
     font-family: 'Roboto Slab', serif;
     font-family: 'Ubuntu', sans-serif;
     text-transform: capitalize;
-    
 } 
 /* css styles start */
-main{
+.head{
     display: flex;
     justify-content: center;
-    
+    align-items: center;
+    flex-direction: column;
 }
-.players-container{
+.container{
     background: #FFFFFF;
     width: 870px;
-    
 }
 .top-players{
     display: grid;
@@ -28,12 +28,12 @@ main{
     margin-bottom: 30px;
     
 }
+.player{
+    display: flex;
+}
 .player img{
     width: 56px;
     height: 56px;
-}
-.player{
-    display: flex;
 }
 .p-name{
     margin-left: 16px;
@@ -55,10 +55,11 @@ hr{
 
 /* top blogs styles start */
 .top-blogs{
-    margin-bottom: 137px;
+    margin-bottom: 46px;
 }
 .blogs{
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 26px;
 }
@@ -82,5 +83,62 @@ hr{
 .blog-info p{
     margin-left: 16px;
     color: #9F9F9F;
-    
 }
+/* top players styles end */
+
+/* courses styles start */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 870px;
+    margin-top: 17px;
+}
+.top-course{
+    display: flex;
+}
+.courses{
+    margin-right: 36px;
+    margin-bottom: 22px;
+}
+.course{
+    margin-left: 50px;
+    height: 269px;
+    width: 252px;
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 10px 5px 10px 5px hsl(253, 13%, 78%);
+
+
+}
+
+.banner img{
+    width: 224px;
+    height: 104px;
+}
+.author{
+    color: #ED6B4F;
+}
+.rating{
+    display: flex;
+
+}
+.fa-star{
+    font-size: 12px;
+}
+.rating .fa-star.filled{
+    color: #FFC014;
+}
+.rating .fa-star.empty{
+    color: #AEAEAE;
+}
+.duration{
+    color: #ED6B4F;
+    margin-left: 22px;
+  
+}
+span{
+    margin-left: 11px;
+}
+/* styles csss end */
